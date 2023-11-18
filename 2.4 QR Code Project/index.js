@@ -21,7 +21,7 @@ inquirer
   console.log(answers)
   const url=answers.URL
   var qr_svg = qr.image(url);
-qr_svg.pipe(fs.createWriteStream('qr_image1.png'));
+qr_svg.pipe(fs.createWriteStream('qr_image2.png'));
 
   fs.writeFile("url.txt",url,(err)=>{
     if(err) throw errconsole.log("This file has been saved")
